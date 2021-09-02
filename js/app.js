@@ -69,7 +69,7 @@ const displaySearchResult = books => {
 
             <p class="card-text">Author: ${book.author_name ? book.author_name : 'Not found name'}. </p>
             
-            <p class="card-text">Publish Date: ${book.publish_date ? book.publish_date : 'Publish date is not show'}. </p>
+            <p class="card-text">Publish Year: ${book.publish_year ? book.publish_year : 'Publish date is not show'}. </p>
 
             <p class="card-text">Publisher:${book.publisher ? book.publisher : 'Publisher details found'}. </p>
 
