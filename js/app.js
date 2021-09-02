@@ -2,10 +2,24 @@
 const spinner = style => {
     document.getElementById('spinner').style.display = style;
 }
+
+// get input id
+const searchInput = document.getElementById('input-field');
+
+// search data by pressing enter key
+searchInput.addEventListener("keyup", function (event) {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.getElementById("press-enter-key").click();
+    }
+});
 ////////// search field area //////////////
 
 const searchInputField = async () => {
-    const searchInput = document.getElementById('input-field');
+    // const searchInput = document.getElementById('input-field');
     const searchText = searchInput.value;
 
     ////// spinner show ////////
